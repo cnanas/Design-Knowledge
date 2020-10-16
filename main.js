@@ -28,7 +28,7 @@ const getQuote = () => {
     fetch("https://api.superhi.com/api/test/quotes/random")
         .then(response => response.json())
         .then(jsonData => {
-            quoteTag.innerHTML = "&ldquo" + jsonData.quote + "&rdquo"
+            quoteTag.innerHTML = "&ldquo;" + jsonData.quote + "&rdquo;"
             authorTag.innerHTML = "" + jsonData.author   
         })
 }
