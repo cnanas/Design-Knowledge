@@ -7,7 +7,7 @@ const randomTag = document.querySelector("footer img")
 let data = []
 
 
-fetch("https://api.superhi.com/api/test/quotes/")
+fetch("https://api.superhi.com/api/test/quotes/random")
     .then((response) => response.json()
 )
     .then((jsonData) => {
