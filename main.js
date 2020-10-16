@@ -30,6 +30,12 @@ const getQuote = () => {
         .then(jsonData => {
             quoteTag.innerHTML = "&ldquo;" + jsonData.quote + "&rdquo;"
             authorTag.innerHTML = "&mdash;" + jsonData.author   
+
+            if (jsonData.quote.length > 100) {
+                quoteTag.classList.add("long")
+            } else {
+                quoteTag.classList.remove("long")
+            }
         })
 }
 
