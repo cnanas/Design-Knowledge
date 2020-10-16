@@ -25,7 +25,7 @@ const getQuote = () => {
         authorTag.innerHTML = randomQuote.author
     }
 
-
+// sample commit
 }
 // run the quote
 getQuote()
