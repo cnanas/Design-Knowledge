@@ -27,7 +27,6 @@ const getQuote = function () {
 
 
 }
-//
 // run the quote
 getQuote()
 
