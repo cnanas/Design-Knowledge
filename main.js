@@ -29,7 +29,7 @@ const getQuote = () => {
         .then(response => response.json())
         .then(jsonData => {
             quoteTag.innerHTML = "&ldquo;" + jsonData.quote + "&rdquo;"
-            authorTag.innerHTML = "" + jsonData.author   
+            authorTag.innerHTML = "&mdash;" + jsonData.author   
         })
 }
 

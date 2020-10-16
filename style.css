@@ -11,11 +11,13 @@ body {
 h1 {
     font-size: 56px;
     text-indent: -0.4em;
+    margin: 0 0 16px 0;
 
 }
 
 h1, p {
     width: 640px;
+
 }
 
 section {
