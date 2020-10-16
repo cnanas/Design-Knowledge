@@ -12,6 +12,7 @@ fetch("quotes.json").then(function (response) {
     return response.json()
 }).then(function (jsonData) {
     data = jsonData
+    getQuote()
 })
 
 const getQuote = function () {
