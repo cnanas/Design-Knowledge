@@ -1,17 +1,3 @@
-// Promises
-// Javascrip's way of IOU's 
-// const getData = new Promise()
-// const getData = fetch('data.txt')
-// fetch('data.txt').then(() => {
-//  
-//
-//   }).catch(() => {
-//
-//   })
-
-// run this promise
-// getData()
-
 
 const quoteTag = document.querySelector("h1")
 const authorTag = document.querySelector("p")
@@ -19,6 +5,14 @@ const authorTag = document.querySelector("p")
 const randomTag = document.querySelector("footer img")
 
 let data = []
+
+// lets load in the quotes.json
+
+fetch("quotes.json").then((response) => {
+    return response.json()
+}).then((jsonData) => {
+    console.log(jsonData)
+})
 
 const getQuote = function () {
 
