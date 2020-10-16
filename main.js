@@ -26,7 +26,7 @@ const getQuote = () => {
         authorTag.innerHTML = randomQuote.author
     }
 
-// sample test
+
 }
 // run the quote
 getQuote()
