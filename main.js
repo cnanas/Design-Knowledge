@@ -8,14 +8,15 @@ let data = []
 
 // lets load in the quotes.json
 
-fetch("quotes.json").then(function (response) {
-    return response.json()
-}).then(function (jsonData) {
+fetch("quotes.json")
+    .then((response) => response.json()
+)
+    .then((jsonData) => {
     data = jsonData
     getQuote()
 })
 
-const getQuote = function () {
+const getQuote = () => {
 
     if (data.length > 0) {
         const randomNumber = Math.floor(Math.random() * data.length)
