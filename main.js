@@ -33,5 +33,6 @@ getQuote()
 // run getQuote on click of random image
 
 randomTag.addEventListener("click", () => {
+    console.log("click")
     getQuote()
 })
