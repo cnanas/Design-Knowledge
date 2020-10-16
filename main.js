@@ -6,7 +6,6 @@ const randomTag = document.querySelector("footer img")
 
 let data = []
 
-// lets load in the quotes.json
 
 fetch("quotes.json")
     .then((response) => response.json()
