@@ -1,0 +1,31 @@
+body {
+    font-family: "Bluu Next", Arial;
+    font-size: 24px;
+    line-height: 1.25;
+    background-color: #cfffaf;
+    background-image: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0));
+    color: #333333;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 56px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
