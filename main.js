@@ -7,7 +7,7 @@ const randomTag = document.querySelector("footer img")
 let data = []
 
 
-fetch("quotes.json")
+fetch("https://api.superhi.com/api/test/quotes/")
     .then((response) => response.json()
 )
     .then((jsonData) => {
@@ -25,7 +25,7 @@ const getQuote = () => {
         authorTag.innerHTML = randomQuote.author
     }
 
-// sample commit
+
 }
 // run the quote
 getQuote()
