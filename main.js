@@ -8,9 +8,9 @@ let data = []
 
 // lets load in the quotes.json
 
-fetch("quotes.json").then((response) => {
+fetch("quotes.json").then(function (response) {
     return response.json()
-}).then((jsonData) => {
+}).then(function (jsonData) {
     console.log(jsonData)
 })
 
