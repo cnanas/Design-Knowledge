@@ -1,7 +1,7 @@
 
 const quoteTag = document.querySelector("h1")
 const authorTag = document.querySelector("p")
-
+const bodyTag = document.querySelector("body")
 const randomTag = document.querySelector("footer img")
 
 // let data = []
@@ -36,6 +36,9 @@ const getQuote = () => {
             } else {
                 quoteTag.classList.remove("long")
             }
+
+            bodyTag.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 90%)`
+
         })
 }
 
